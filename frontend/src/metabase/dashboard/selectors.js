@@ -222,7 +222,7 @@ export const getParameters = createSelector(
         // if there's a single uniqe field (accounting for FKs) then
         // include it as the one true field_id
         field_id:
-          fieldIdsWithFKResolved.length === 1
+          fieldIdsWithFKResolved.length >= 1
             ? fieldIdsWithFKResolved[0]
             : null,
       };
